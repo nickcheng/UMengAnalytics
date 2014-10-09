@@ -12,8 +12,10 @@ Pod::Spec.new do |s|
   s.requires_arc = false
 
   s.source_files = '**/MobClick.h'
+  s.public_header_files = "**/MobClick.h"
   s.preserve_paths = "**/libMobClickLibrary.a"
-  s.libraries = "MobClickLibrary", "z"
+  s.vendored_libraries = "**/libMobClickLibrary.a"
+  s.libraries = "libz"
   s.xcconfig = {
     'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/UMengAnalytics/**"'
   }
