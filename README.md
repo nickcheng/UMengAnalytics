@@ -1,0 +1,4 @@
+UMengAnalytics
+==============
+
+CocoaPods spec
